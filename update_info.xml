@@ -1,0 +1,13 @@
+<update>
+    <version>2.0.0</version>
+    <description>
+        <h1>更新内容</h1>
+        <p>本次更新包含以下内容：</p>
+        <ul>
+            <li>修复了多个已知问题</li>
+            <li>新增了音频播放功能</li>
+            <li>优化了用户界面</li>
+        </ul>
+    </description>
+    <download_url>https://github.com/WeiYuchen8927/E-Motion/releases/latest</download_url>
+</update>
