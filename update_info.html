@@ -10,6 +10,7 @@
             color: white;  /* 设置文字颜色为白色 */
             margin: 0;
             padding: 0;
+            font-size: 14px;  /* 整体字体大小变小 */
         }
         .container {
             max-width: 600px;
@@ -20,25 +21,22 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            font-size: 24px;
+            font-size: 22px;  /* 标题字体稍大 */
             color: white;  /* 设置标题颜色为白色 */
             text-align: center;
         }
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 20px;
+        p, ul, li {
+            font-size: 14px;  /* 内容部分字体设置为较小 */
         }
         ul {
             margin: 10px 0;
             padding-left: 20px;
         }
         li {
-            font-size: 16px;
             margin-bottom: 10px;
         }
         .version-info {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         .update-notes {
             border-left: 5px solid #27ae60;
@@ -50,6 +48,17 @@
             color: red;  /* 设置文字为红色 */
             font-weight: bold;  /* 设置文字为加粗 */
         }
+        .download-info {
+            margin-top: 20px;
+            font-size: 14px;  /* 下载信息部分字体较小 */
+            color: yellow;  /* 设置下载信息为黄色 */
+            font-weight: bold;  /* 加粗文字 */
+            text-align: center;  /* 居中显示 */
+        }
+        .download-link {
+            color: cyan;  /* 设置链接颜色为青色 */
+            font-weight: bold;  /* 加粗链接文字 */
+        }
     </style>
 </head>
 <body>
@@ -58,21 +67,29 @@
     <h1>程序版本更新</h1>
 
     <div class="version-info">
-        <p><strong>当前版本：</strong>1.0.0</p>
-        <p><strong>最新版本：</strong>1.1.0</p>
+        <p><strong>最新版本：</strong>1.16</p>
+        <p><strong>新版本发布时间：</strong>2024年9月14日</p> <!-- 添加发布时间 -->
     </div>
 
     <div class="update-notes">
-        <h2>更新内容：</h2>
+        <h2>1.16版本更新内容：</h2>
         <ul>
-            <li>修复了多个已知问题</li>
-            <li>优化了性能和用户体验</li>
-            <li>增加了新功能：支持多用户模式</li>
+            <li>1. 修复了UI中VAD值范围显示错误；</li>
+            <li>2. 修复了访问NAS造成的程序崩溃；</li>
+            <li>3. 修复了“搜索”功能无法添加自定义标签；</li>
+            <li>4. 修复了保存文件的序号错误；</li>
+            <li>5. 更新了文件保存序号生成逻辑；</li>
+            <li>6. 更新了VAD值的保存逻辑。</li>
         </ul>
     </div>
 
     <!-- 红色加粗提示文字 -->
     <p class="warning-text">前往官网下载最新版本，否则该程序将无法运行！</p>
+
+    <!-- 下载信息 -->
+    <p class="download-info">
+        新版本链接：<a href="https://cowtransfer.com/s/7a46418a76104d" class="download-link">https://cowtransfer.com/s/7a46418a76104d</a>，口令：1q1r9h
+    </p>
 
 </div>
 
